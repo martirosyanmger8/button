@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Убегающая кнопка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ты приедешь в марте ?</h1>
+    <div class="image-holder">
+        <img id="cat" src="img/cat.gif" alt="">
+    </div>
+    <div class="container">
+        <button id="yes" onclick="dancing()">Да</button>
+        <button id="runawayButton">Нет</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script>
+    function dancing() {
+        let imageHolder = document.querySelector('#cat');
+        let containerHolder = document.querySelector('.container')
+        let h1Holder = document.querySelector('h1')
+        containerHolder.classList.add('hide')
+        imageHolder.src = 'img/dancing-cat.gif'
+        h1Holder.textContent = 'УТЕМ МРУТЕТ'
+        
+        console.log()
+    }
+</script>
+</html>

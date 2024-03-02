@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-holder {
+    padding-bottom: 30px;
+}
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+.container.hide {
+    display: none;
+}
+
+#runawayButton {
+    position: absolute;
+    right: 0;
+    width: max-content;
+}
